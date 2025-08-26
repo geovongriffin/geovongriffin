@@ -1,6 +1,6 @@
 ## README.md
 
-#### ⚡ Last updated: `25-08-2025`
+#### ⚡ Last updated: `26-08-2025`
 
 ## About
 Hey, I'm Geo - a web developer + designer from the US. Right now I have a 9-5, but my end goal is to work full-time for myself!
