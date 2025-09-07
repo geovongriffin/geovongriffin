@@ -1,0 +1,57 @@
+/*
+
+ABOUT.CSS
+GEOVONGRIFFIN.COM
+LAST UPDATED SEP 2025
+
+
+COLOR SELECTIONS:
+    BORDERS, TEXT SELECT: #EEEEEE;
+    MAIN TEXT: #5A5A5A;
+    LINKS: #000000;
+    ACCENT: #C0E8FF;
+    SECONDARY TEXT: #AAAAAA;
+
+*/
+
+main {display: block; 
+    border: 1px solid #eeeeee;
+    padding: 64px;
+    max-width: 800px;
+    margin: auto;
+    color: #5a5a5a;
+    margin-top: 64px;}
+p {font-size: 1.4em;
+    line-height: 1.6em;
+    font-family:  'Radley', serif;}
+main a, main a:hover {text-decoration: none;
+    color: #5a5a5a;}
+.topic {font-size: 1.8em;}
+.bl-emphasis {color: #3d3dff;
+    font-weight: bold;
+    border-bottom: 4px solid;}
+.geo {width: 124px;
+    height: auto;
+    display: block;
+    border-radius: 64px;
+    margin-top: 64px;
+    margin-left: auto;
+    margin-right: auto;}
+.button {margin: auto;
+    font-family: 'Chillax', sans-serif;
+    font-size: 1em;
+    border: 2px solid #eee;
+    border-radius: 64px;
+    padding: 8px 0;
+    width: fit-content;
+    display: block;}
+.button a {color: #000;
+    border-radius: 64px;
+    text-decoration: none;
+    padding: 8px 32px;}
+.button a:hover {color: #5a5a5a;
+    background: #eee;
+    text-decoration: none;}
+
+@media only screen and (max-width: 600px) {
+    html {font-size: 0.7em;}}

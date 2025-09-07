@@ -73,7 +73,10 @@ header {background: #C0E8FF;
     border-radius: 64px;
     position: fixed; left: 48px; top: 48px;
     transition: transform 4s ease;}
+/*
 .site-icon:hover {transform: rotate(-360deg);}
+*/
+
 .site-link a {padding: 8px; height: auto;}
 
 .tagline {margin-top: 204px;
@@ -107,6 +110,8 @@ nav a {margin-bottom: -1px;}
     position: fixed; 
     left: 0; top: 0; 
     z-index: 100;}
+#sidebar .tagline {
+    font-family: 'Radley', serif;}
 #sidebar .social-icons {display: flex;
     flex-wrap: wrap; 
     padding: 32px 0; 
@@ -154,9 +159,11 @@ main .post {padding: 16px;
     border: 1px solid #eeeeee;}
 main .post p {padding: 0 16px;}
 main .post h1,h2,h3,h4,h5,h6 {
+    font-family: 'Chillax';
+    text-transform: uppercase;
     color: #000000;
-    margin: 16px 0 0 16px;
-    letter-spacing: 2px;}
+    font-weight: 600;
+    margin: 16px 0 32px 16px;}
 main .post-meta {padding: 8px;
     width: auto;
     display: flex;
@@ -164,6 +171,7 @@ main .post-meta {padding: 8px;
     flex-wrap: wrap;
     flex-direction: row;}
 main .post-tag {padding: 4px 8px 2px;
+    text-transform: uppercase;
     user-select: none;
     font-family: 'Chillax';
     font-size: 0.7em;
@@ -190,6 +198,13 @@ main .feed .post img {
 .cl {background: transparent;
     border: 2px solid transparent;}
 
+#credit p {
+    font-size: .7em;
+    position: fixed;
+    bottom: 8px;
+    right: 8px;
+
+}
 /* footer section */
 footer {
     /*border-top: 1px solid #eeeeee;
