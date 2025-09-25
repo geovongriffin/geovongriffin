@@ -16,42 +16,23 @@ COLOR SELECTIONS:
 
 main {display: block; 
     border: 1px solid #eeeeee;
-    padding: 64px;
-    max-width: 800px;
-    margin: auto;
+    padding: 16px 32px;
+    max-width: inherit;
     color: #5a5a5a;
-    margin-top: 64px;}
-p {font-size: 1.4em;
-    line-height: 1.6em;
+    margin-top: 32px;
+    transition: all ease 0.4s;}
+main:hover {
+    transform: translate(8px, 8px);
+    box-shadow: -8px -8px #eee;}
+p {
+    line-height: 1.3em;
     font-family:  'Radley', serif;}
 main a, main a:hover {text-decoration: none;
     color: #5a5a5a;}
-.topic {font-size: 1.8em;}
 .bl-emphasis {color: #3d3dff;
     font-weight: bold;
-    border-bottom: 4px solid;}
-.geo {width: 124px;
-    height: auto;
-    display: block;
-    border-radius: 64px;
-    margin-top: 64px;
-    margin-left: auto;
-    margin-right: auto;}
-.button {margin: auto;
-    font-family: 'Chillax', sans-serif;
-    font-size: 1em;
-    border: 2px solid #eee;
-    border-radius: 64px;
-    padding: 8px 0;
-    width: fit-content;
-    display: block;}
-.button a {color: #000;
-    border-radius: 64px;
-    text-decoration: none;
-    padding: 8px 32px;}
-.button a:hover {color: #5a5a5a;
-    background: #eee;
-    text-decoration: none;}
+    border-bottom: 2px solid;}
 
 @media only screen and (max-width: 600px) {
-    html {font-size: 0.7em;}}
+    main:hover {transform: none; box-shadow: none;}
+}

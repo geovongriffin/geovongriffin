@@ -58,7 +58,7 @@ main a:hover {text-decoration: underline;
 /* header section */
 header {background: #C0E8FF;
     width: calc(100vw - 272px);
-    height: 200px;
+    height: 238px;
     margin-top: -24px;
     /*
     border-left: 1px solid #eeeeee;
@@ -71,15 +71,15 @@ header {background: #C0E8FF;
     outline: 8px solid transparent;
     height: auto;
     border-radius: 64px;
-    position: fixed; left: 48px; top: 48px;
+    position: fixed; left: 48px; top: 32px;
     transition: transform 4s ease;}
 /*
 .site-icon:hover {transform: rotate(-360deg);}
 */
 
-.site-link a {padding: 8px; height: auto;}
+.site-link a {padding: 8px; width: inherit; height: auto;}
 
-.tagline {margin-top: 204px;
+.tagline {margin-top: 172px;
     width: inherit;
     text-align: center;
     font-size: 1em;
@@ -87,21 +87,20 @@ header {background: #C0E8FF;
 
 nav {display: flex;
     flex-direction: column;
-    font-family: 'Radley', serif;
-    margin-top: 32px;}
+    font-family: 'Radley', serif;}
 
 nav .nav-link {
-    padding: 16px;
+    padding: 12px;
     text-align: center;
-    border-top: 1px solid #eeeeee; 
-    border-bottom: 1px solid #eeeeee;}
+    border-top: 1px solid #eeeeee;}
 nav .ds {user-select: none; 
     color: #aaaaaa; 
     margin-top: -1px; 
-    padding: 16px; 
+    padding: 12px; 
     text-align: center;
+    border-top: 1px solid #eeeeee;}
+nav .ds:last-child {
     border-bottom: 1px solid #eeeeee;}
-
 nav a {margin-bottom: -1px;}
 
 #sidebar {border-right: 1px solid #eeeeee;
@@ -128,11 +127,12 @@ nav a {margin-bottom: -1px;}
     height: 40px; 
     transition: transform linear 0.1s;}
 #sidebar .social-icons img:hover {transform:scale(1.1);}
-
 #sidebar #version-ctrl {
     padding: 0 0 16px 0;
     font-size: 0.7em;
     text-align: center;}
+#sidebar #version-ctrl p {
+    font-family: 'Chillax';}
 #sidebar #version-ctrl a {padding: 2px 8px;}
 #sidebar #version-ctrl .patch {padding-left: 16px;
     pointer-events: none;
@@ -149,14 +149,18 @@ nav a {margin-bottom: -1px;}
 main .feed {display: flex;
     flex-wrap: wrap;
     gap: 16px;
-    margin: 0;
+    margin-top: 32px;
     width: calc(100vw - 272px);}
 main {z-index: 99; font-family: 'Radley', serif;}
 main .post {padding: 16px;
     flex: auto;
     width: 380px;
     height: auto;
+    transition: all ease 0.4s;
     border: 1px solid #eeeeee;}
+main .post:hover {
+    transform: translate(8px, 8px);
+    box-shadow: -8px -8px #eee;}
 main .post p {padding: 0 16px;}
 main .post h1,h2,h3,h4,h5,h6 {
     font-family: 'Chillax';
@@ -233,6 +237,7 @@ footer {
     .page-flex {margin: 0;}
     header {width: calc(100vw - 48px); height: calc(100vh - 75vh);}
     .site-icon, .site-link {text-align: center;
+        margin-top: 16px;
         position: static; 
         display: inline-block;}
     .tagline {display: none;}
@@ -257,7 +262,8 @@ footer {
     nav .ds {padding: 16px;}
     main {width: calc(100vw - 48px);}
     main .feed p, h1,h2,h3,h4,h5,h6 {text-align: left;}
-    main .feed .post {max-width: calc(100vw - 48px);}
+    main .feed .post {max-width: calc(100vw - 48px); transition: none;}
+    main .feed .post:hover {transform: none; box-shadow: none;}
     main .feed .post img {width: 200px; height: auto; margin: auto;}
     main .post-meta {padding: 16px 0 0 0; margin: 0; width: calc(100vw - 48px);}
     main .feed {width: calc(100vw - 48px); margin-top: 0; text-align: center;}
