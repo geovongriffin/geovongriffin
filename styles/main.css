@@ -16,13 +16,14 @@ COLOR SELECTIONS:
 /* DOM */
 * {
     box-sizing: border-box;
+    cursor: url("/assets/micro-icon-pack/Computer Systems/1. Pointer.png"), auto;
 }
 .page-flex {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     padding: 16px;
-    margin-left: 224px;
+    margin-left: 250px;
 }
 
 /* DOM text */
@@ -64,14 +65,16 @@ a, nav a {
     text-decoration: none;
     color: #000000;
 }
-a:hover,
+a:hover {
+    text-decoration: none;
+    cursor: url("/assets/micro-icon-pack/Computer Systems/3. Hand Hover.png"), auto;    
+}
 a:active {
     text-decoration: none;
 }
 nav a:hover,
 nav a:active {
     color: #5a5a5a;
-    background: #eeeeee;
     text-decoration: none;
 }
 main a {
@@ -86,72 +89,66 @@ main a:hover {
 /* header section */
 header {
     background: #c0e8ff;
-    width: calc(100vw - 272px);
-    height: 240px;
-    margin-top: -24px;
+    width: calc(100vw - 300px);
+    height: 32px;
+    margin: 0 0 32px 0;
 }
 
 /* sidebar section */
 .site-icon {
-    width: 116px;
-    outline: 4px solid transparent;
-    border-radius: 64px;
+    margin-top: 24px;
+    width: 160px;
+    border-radius: 100px;
+    box-shadow: 0 0 4px rgba(0,0,0, 0.2);
     height: auto;
-    position: fixed;
-    left: 56px;
-    top: 48px;
-    transition: transform 4s ease;
+    display: inline-block;
 }
 .site-icon:hover {
-    transform: rotate(-360deg);
+    cursor: url("/assets/micro-icon-pack/Computer Systems/3. Hand Hover.png"), auto;
 }
 .site-link a {
     padding: 8px;
     width: inherit;
     height: auto;
 }
-.tagline {
-    margin-top: 196px;
-    width: inherit;
-    text-align: center;
-    font-size: 1em;
-    font-weight: 300;
-}
 nav {
     display: flex;
     flex-direction: column;
+    margin: auto;
+    width: 100px;
 }
 nav .nav-link {
+    border: 1px solid transparent;
     padding: 12px;
-    text-align: center;
-    border-top: 1px solid #eeeeee;
+}
+nav .nav-link:hover {
+    border-image: url("/assets/ants.gif") 1 repeat;
 }
 nav .ds {
     user-select: none;
     color: #aaaaaa;
-    margin-top: -1px;
     padding: 12px;
-    text-align: center;
-    border-top: 1px solid #eeeeee;
-}
-nav .ds:last-child {
-    border-bottom: 1px solid #eeeeee;
-}
-nav a {
-    margin-bottom: -1px;
 }
 #sidebar {
     font-family: "Radley";
     border-right: 1px solid #eeeeee;
-    width: 224px;
+    width: 250px;
     height: 100vh;
     position: fixed;
     left: 0;
     top: 0;
     z-index: 100;
+    text-align: center;
+    align-content: center;
 }
 #sidebar .tagline {
-    color: #eeeeee;
+    font-family: "Lilex";
+    letter-spacing: 1px;
+    width: inherit;
+    text-align: center;
+    font-size: 0.6em;
+    font-weight: 300;
+    padding: 16px 0;
 }
 #sidebar .social-icons {
     display: flex;
@@ -206,7 +203,7 @@ main .feed {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    width: calc(100vw - 272px);
+    width: calc(100vw - 300px);
 }
 main {
     z-index: 99;
@@ -215,7 +212,7 @@ main {
 main .feed-label {
     display: block;
     border: 1px solid #eee;
-    margin: 32px 0 32px 0;
+    margin: 32px 0;
     padding: 16px;
     font-size: 1.2em;
     text-transform: none;
@@ -224,8 +221,8 @@ main .feed-label {
 main .post {
     padding: 16px;
     flex: auto;
-    width: 380px;
-    height: auto;
+    max-width: 360px;
+    height: fit-content;
     transition: all ease 0.4s;
     border: 1px solid #eeeeee;
 }
@@ -307,7 +304,7 @@ footer {
     padding: 16px 16px 0 16px;
     width: calc(100vw - 272px);
     height: auto;
-    text-align: center;
+    text-align: left;
     text-wrap: balance;
     font-size: 0.6em;
     line-height: 1.25em;
@@ -377,7 +374,7 @@ footer {
     nav {
         justify-content: center;
         margin-top: 24px;
-        font-family: "Lilex", monospace;
+        font-family: "Radley";
         z-index: 101;
         display: flex;
         flex-direction: column;
