@@ -2,7 +2,7 @@
 
 MAIN.CSS
 GEOVONGRIFFIN.COM
-LAST UPDATED AUG 2025
+LAST UPDATED OCT 2025
 
 COLOR SELECTIONS:
     BORDERS, TEXT SELECT: #EEEEEE;
@@ -30,6 +30,10 @@ COLOR SELECTIONS:
     font-family: "Chillax";
     src: url("/assets/fonts/Chillax-Variable.ttf") format("truetype");
 }
+@font-face {
+    font-family: "Lilex";
+    src: url("/assets/fonts/Lilex/ttf/Lilex-Regular.ttf") format("truetype");
+}
 
 *::selection,
 *::-moz-selection,
@@ -40,20 +44,14 @@ html img {
     -webkit-user-drag: none;
 }
 body {
-    font-family: "Chillax";
+    font-family: "Lilex", monospace;
     font-weight: 400;
-    font-size: 1.125em;
+    font-size: 1em;
     line-height: 1.25;
     max-width: 100%;
     overflow-x: hidden;
 }
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+p, h1, h2, h3, h4, h5, h6 {
     color: #5a5a5a;
 }
 .feed img {
@@ -61,8 +59,7 @@ h6 {
 }
 
 /* DOM links */
-a,
-nav a {
+a, nav a {
     transition: all ease 0.4s;
     text-decoration: none;
     color: #000000;
@@ -90,9 +87,10 @@ main a:hover {
 header {
     background: #c0e8ff;
     width: calc(100vw - 272px);
-    height: 168px;
+    height: 240px;
     margin-top: -24px;
 }
+
 /* sidebar section */
 .site-icon {
     width: 116px;
@@ -101,18 +99,17 @@ header {
     height: auto;
     position: fixed;
     left: 56px;
-    top: 56px;
+    top: 48px;
     transition: transform 4s ease;
 }
-
-.site-icon:hover {transform: rotate(-360deg);}
-
+.site-icon:hover {
+    transform: rotate(-360deg);
+}
 .site-link a {
     padding: 8px;
     width: inherit;
     height: auto;
 }
-
 .tagline {
     margin-top: 196px;
     width: inherit;
@@ -120,13 +117,10 @@ header {
     font-size: 1em;
     font-weight: 300;
 }
-
 nav {
     display: flex;
     flex-direction: column;
-    font-family: "Radley", serif;
 }
-
 nav .nav-link {
     padding: 12px;
     text-align: center;
@@ -146,8 +140,8 @@ nav .ds:last-child {
 nav a {
     margin-bottom: -1px;
 }
-
 #sidebar {
+    font-family: "Radley";
     border-right: 1px solid #eeeeee;
     width: 224px;
     height: 100vh;
@@ -156,12 +150,14 @@ nav a {
     top: 0;
     z-index: 100;
 }
-#sidebar .tagline {color: #000;}
+#sidebar .tagline {
+    color: #eeeeee;
+}
 #sidebar .social-icons {
     display: flex;
     flex-wrap: wrap;
-    padding: 16px 0;
-    width: 140px;
+    padding: 24px 0;
+    width: 120px;
     flex-direction: row;
     justify-content: center;
     gap: 0 8px;
@@ -185,17 +181,15 @@ nav a {
     padding: 0 0 16px 0;
     font-size: 0.7em;
     text-align: center;
-}
-#sidebar #version-ctrl p {
-    font-family: "Chillax";
+    font-family: "Lilex", monospace;
 }
 #sidebar #version-ctrl a {
     padding: 4px 8px;
 }
 #sidebar #version-ctrl .patch {
     padding-left: 16px;
-    pointer-events: none;
     font-weight: 600;
+    pointer-events: none;
     background: #c0e8ff;
     border-radius: 64px 0 0 64px;
     color: black;
@@ -216,13 +210,14 @@ main .feed {
 }
 main {
     z-index: 99;
-    font-family: "Radley", serif;
+    font-family: "Radley";
 }
 main .feed-label {
     display: block;
     border: 1px solid #eee;
     margin: 32px 0 32px 0;
     padding: 16px;
+    font-size: 1.2em;
     text-transform: none;
     text-align: center;
 }
@@ -241,16 +236,11 @@ main .post:hover {
 main .post p {
     padding: 0 16px;
 }
-main .post h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+main .post h1, h2, h3, h4, h5, h6 {
     font-family: "Chillax";
+    font-weight: 600;
     text-transform: uppercase;
     color: #000000;
-    font-weight: 600;
     margin: 16px 0 32px 16px;
 }
 main .post-meta {
@@ -262,14 +252,14 @@ main .post-meta {
     flex-direction: row;
 }
 main .post-tag {
-    padding: 4px 8px 2px;
+    padding: 4px 8px;
     text-transform: uppercase;
     user-select: none;
-    font-family: "Chillax";
+    font-family: "Lilex", monospace;
     font-size: 0.7em;
     font-weight: 400;
     color: #000000;
-    width: fit-content;
+    width: auto;
     border-radius: 64px;
 }
 main .feed .post img {
@@ -301,13 +291,13 @@ main .feed .post img {
     background: transparent;
     border: 2px solid transparent;
 }
-
 #credit p {
     font-size: 0.7em;
     position: fixed;
     bottom: 8px;
     right: 8px;
 }
+
 /* footer section */
 footer {
     /*border-top: 1px solid #eeeeee;
@@ -319,13 +309,12 @@ footer {
     height: auto;
     text-align: center;
     text-wrap: balance;
-    font-size: 0.8em;
+    font-size: 0.6em;
     line-height: 1.25em;
 }
 .light {
     color: #aaaaaa;
 }
-
 #viewport-error {
     display: none;
 }
@@ -388,7 +377,7 @@ footer {
     nav {
         justify-content: center;
         margin-top: 24px;
-        font-family: "Radley", serif;
+        font-family: "Lilex", monospace;
         z-index: 101;
         display: flex;
         flex-direction: column;
@@ -411,13 +400,7 @@ footer {
     main {
         width: calc(100vw - 48px);
     }
-    main .feed p,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
+    main .feed p, h1, h2, h3, h4, h5, h6 {
         text-align: left;
     }
     main .feed .post {

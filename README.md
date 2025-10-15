@@ -1,20 +1,22 @@
-## README.md
+#### ⚡ Last updated: `14-10-2025`
 
-#### ⚡ Last updated: `30-09-2025`
+I'm Geo! A developer & designer from the US. Nice to meet you.
 
-## About
-Hey, I'm Geo - a web developer + designer from the US. Right now I have a 9-5, but my end goal is to work full-time for myself!
+I work as the Information Services lead for a [public library](https://demarestlibrary.org/about/our-team). My next career goal is to work full-time in the gaming industry, or something close to it / adjacent!
 
-### 🌱 What I'm working on
-- Building my [portfolio](https://geovongriffin.com/) space
-- Laying the groundwork for my dream micro-blogging platform: _mydijo.com_
-- My current skillsets include:
-    * HTML5 : Advanced
-    * CSS3 : Advanced
-    * UX/UI Design: Proficient
-    * Pixel Art: Proficient
+#### 🌱 What I'm working on
+- Experimenting with different tech stacks on my [portfolio](https://geovongriffin.com/) space
+- Laying the groundwork for my dream micro-blogging platform, "mydijo.com"
+    - dijo = digital journal
+    - Inspired by platforms like Tumblr and Twitter
+    - Will be FLOSS with the source code available on GitHub
+- Building a few mini-projects using: GameMaker Studio 2, Godot 4.5, Pixelorama, Bitwig Studio
 
-    _On the list to learn: Javascript, React, PHP..._
+#### 🪀 Apps I like to use
+- [Zed](https://zed.dev/)
+- [Pixelorama](https://godotengine.org/showcase/pixelorama/)
+- [Bitwig Studio](https://www.bitwig.com/)
+- [GameMaker](https://gamemaker.io/en)
+- [Godot](https://godotengine.org/)
 
-## Right now
-I'm not looking for work in this field right now, but that will change in 2026. I'm currently taking a full-stack dev course and will be graduating in March. I appreciate you checking out my page in the meantime. Come back later!
+I'll begin looking for dev work in 2026. I'm currently taking a dev course in my off-hours and will be graduating in March. I appreciate you checking out my page in the meantime. Come back later!
